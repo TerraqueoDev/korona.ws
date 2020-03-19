@@ -12,7 +12,7 @@ export default function CitiesSplit({ isLoading, data }) {
 
   return (
     <>
-      <Label3>Podział na miasta</Label3>
+      <Label3>Cidades</Label3>
       <Block
         $style={{
           height: '196px',
@@ -38,7 +38,7 @@ export default function CitiesSplit({ isLoading, data }) {
             />
             <XAxis type="number" hide />
             <Tooltip
-              formatter={value => [value, 'Liczba']}
+              formatter={value => [value, 'Casos']}
               contentStyle={{
                 backgroundColor: theme.colors.backgroundPrimary,
                 borderColor: theme.colors.backgroundTertiary,

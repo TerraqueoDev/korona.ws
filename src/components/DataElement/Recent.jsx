@@ -45,12 +45,12 @@ export default function Recent({ isLoading, data }) {
   return (
     <>
       <Label3 $style={{ marginBottom: '12px' }}>
-        Ostatnie
+        Recentes
       </Label3>
       <Input
         size={SIZE.compact}
         overrides={{Before: SearchIcon}}
-        placeholder="Szukaj"
+        placeholder="Pesquisar"
         onChange={event => setFilter(event.target.value)}
         value={filter}
       />
@@ -79,10 +79,10 @@ export default function Recent({ isLoading, data }) {
             <Paragraph3 margin={0}>Data</Paragraph3>
           </StyledHeadCell>
           <StyledHeadCell role="columnheader">
-            <Paragraph3 margin={0}>Liczba</Paragraph3>
+            <Paragraph3 margin={0}>Casos</Paragraph3>
           </StyledHeadCell>
           <StyledHeadCell role="columnheader">
-            <Paragraph3 margin={0}>Miasto</Paragraph3>
+            <Paragraph3 margin={0}>Cidade</Paragraph3>
           </StyledHeadCell>
         </StyledHead>
         <StyledTableBody>

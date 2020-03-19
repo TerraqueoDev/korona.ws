@@ -41,7 +41,7 @@ export default function Layout() {
           <Button
             $as="a"
             target="_blank"
-            href="https://www.gov.pl/web/koronawirus"
+            href="https://coronavirus.saude.gov.br/"
             kind={KIND.secondary}
             overrides={{
               BaseButton: {
@@ -53,13 +53,13 @@ export default function Layout() {
               }
             }}
           >
-            Więcej informacji nt. koronawirusa
+            Mais informações sobre o coronavirus.
           </Button>
         </Block>
       </Layer>
       <Layer>
         <Block position={'fixed'} bottom={'40px'} right={'40px'} display="flex">
-          <div className="fb-share-button" data-href="https://korona.ws" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkorona.ws%2F&amp;src=sdkpreparse" className="fb-xfbml-parse-ignore">Udostępnij</a></div>
+          <div className="fb-share-button" data-href="https://korona.ws" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkorona.ws%2F&amp;src=sdkpreparse" className="fb-xfbml-parse-ignore">Compartilhar</a></div>
           <Button
             size={SIZE.mini}
             onClick={() => setIsOpen(true)}
@@ -73,7 +73,7 @@ export default function Layout() {
               }
             }}
           >
-            Informacje
+            Informações
           </Button>
           <Button
             size={SIZE.mini}
@@ -88,7 +88,7 @@ export default function Layout() {
               }
             }}
           >
-            {useDarkTheme ? 'Wyłącz' : 'Włącz'} tryb ciemny
+            Tema {useDarkTheme ? 'Claro' : 'Escuro'} 
           </Button>
           <Modal
             onClose={() => setIsOpen(false)}

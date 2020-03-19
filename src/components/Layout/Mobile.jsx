@@ -56,13 +56,13 @@ export default function Mobile() {
             paddingBottom: 0
           })}
         >
-          <HeadingSmall margin={0}>Koronawirus w Polsce</HeadingSmall>
+          <HeadingSmall margin={0}>COVID-19 no Brasil</HeadingSmall>
           <FlexGrid flexGridColumnCount={3}>
             <FlexGridItem>
               <Figure
                 data={deaths}
                 isLoading={isLoading}
-                label="Zgony"
+                label="Mortes"
                 color={theme.colors.primary}
                 size="compact"
               />
@@ -71,7 +71,7 @@ export default function Mobile() {
               <Figure
                 data={cases}
                 isLoading={isLoading}
-                label="Potw. przypadki"
+                label="Casos Confirmados"
                 color={theme.colors.negative}
                 size="compact"
               />
@@ -80,7 +80,7 @@ export default function Mobile() {
               <Figure
                 data={cures}
                 isLoading={isLoading}
-                label="Wyleczenia"
+                label="Recuperados"
                 color={theme.colors.positive}
                 size="compact"
               />
@@ -133,7 +133,7 @@ export default function Mobile() {
                   <Figure
                     data={hospitalizations}
                     isLoading={isLoading}
-                    label="Hospitalizowani"
+                    label="Internados"
                     color={theme.colors.accent}
                     size="compact"
                   />
@@ -142,7 +142,7 @@ export default function Mobile() {
                   <Figure
                     data={quarantines}
                     isLoading={isLoading}
-                    label="Poddani kwarantannie"
+                    label="Quarentena"
                     color={theme.colors.accent}
                     size="compact"
                   />
@@ -151,7 +151,7 @@ export default function Mobile() {
                   <Figure
                     data={supervisions}
                     isLoading={isLoading}
-                    label="Objęci nadzorem epidemiologicznym"
+                    label="Casos Suspeitos"
                     color={theme.colors.accent}
                     size="compact"
                   />
@@ -160,7 +160,7 @@ export default function Mobile() {
                   <Figure
                     data={tests}
                     isLoading={isLoading}
-                    label="Testy"
+                    label="Testados"
                     color={theme.colors.accent}
                     size="compact"
                   />

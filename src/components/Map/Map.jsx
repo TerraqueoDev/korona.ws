@@ -61,7 +61,7 @@ export default function Map(props) {
     return (
       <Centered>
         <Spinner />
-        <Paragraph2>Ładowanie danych</Paragraph2>
+        <Paragraph2>Carregando</Paragraph2>
       </Centered>
     )
   }
@@ -88,10 +88,10 @@ export default function Map(props) {
   }
 
   const max = Math.max(...(data.map(({ cases }) => cases.total)));
-  const position = clickedCity ? getLocationForCity(clickedCity, data) : [51.984880, 19.368896];
+  const position = clickedCity ? getLocationForCity(clickedCity, data) : [-15.826691, -47.92182];
 
   return (
-    <LeafletMap center={position} zoom={clickedCity ? 9 : width < theme.breakpoints.medium ? 6 : 7} zoomControl={false} maxZoom={11} minZoom={4} {...props}>
+    <LeafletMap center={position} zoom={clickedCity ? 9 : width < theme.breakpoints.medium ? 6 : 5} zoomControl={false} maxZoom={11} minZoom={4} {...props}>
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
@@ -142,14 +142,14 @@ export default function Map(props) {
             <Block marginTop="10px">
               <Figure
                 data={activeCity.deaths.data}
-                label="Zgony"
+                label="Mortes"
                 color={theme.colors.primary}
                 size="compact"
               />
 
               <Figure
                 data={activeCity.cases.data}
-                label="Potwierdzone przypadki"
+                label="Casos Confirmados"
                 color={theme.colors.negative}
                 size="compact"
               />

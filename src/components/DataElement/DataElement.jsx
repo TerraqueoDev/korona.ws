@@ -60,15 +60,15 @@ export default function DataElement() {
             }
           }}
         >
-          <Tab title="Potwierdzone przypadki">
+          <Tab title="Casos Confirmados">
             <CitiesSplit data={groupedCases} isLoading={isLoading} />
             <Recent data={cases} isLoading={isLoading} />
           </Tab>
-          <Tab title="Zgony">
+          <Tab title="Mortes">
             <CitiesSplit data={groupedDeaths} isLoading={isLoading} />
             <Recent data={deaths} isLoading={isLoading} />
           </Tab>
-          <Tab title="Wyleczenia">       
+          <Tab title="Recuperados">       
             <Notification 
               overrides={{
                 Body: {
@@ -79,7 +79,7 @@ export default function DataElement() {
                 }
               }}
             >
-              Liczba wyleczonych została skorygowana po błędnej interpretacji komunikatu GIS-u, który mówił o 13 ozdrowiałych.
+            
             </Notification>
             <CitiesSplit data={groupedCures} isLoading={isLoading} />
             <Recent data={cures} isLoading={isLoading} />

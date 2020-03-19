@@ -100,7 +100,7 @@ export default function Figures() {
 
   return (
     <StyledCard
-      title="Koronawirus w Polsce"
+      title="COVID-19 no Brasil"
       style={$theme => ({
         [$theme.mediaQuery.medium]: {
           maxHeight: 'calc(100vh - 80px)',
@@ -115,21 +115,21 @@ export default function Figures() {
         <Figure
           data={deaths}
           isLoading={isLoading}
-          label="Zgony"
+          label="Mortes"
           color={theme.colors.primary}
           size={width < theme.breakpoints.medium ? 'compact' : 'standard'}
         />
         <Figure
           data={cases}
           isLoading={isLoading}
-          label="Potwierdzone przypadki"
+          label="Casos Confirmados"
           color={theme.colors.negative}
           size={width < theme.breakpoints.medium ? 'compact' : 'standard'}
         />
         <Figure
           data={cures}
           isLoading={isLoading}
-          label="Wyleczenia"
+          label="Recuperados"
           color={theme.colors.positive}
           size={width < theme.breakpoints.medium ? 'compact' : 'standard'}
         />
@@ -153,7 +153,7 @@ export default function Figures() {
               }
             }}
           >
-            {!showMore ? 'Pokaż więcej' : 'Ukryj'}
+            {!showMore ? 'Mostrar +' : 'Ocultar'}
           </Button>
         </Block>
 
@@ -162,28 +162,28 @@ export default function Figures() {
             <Figure
               data={hospitalizations}
               isLoading={isLoading}
-              label="Hospitalizowani"
+              label="Internados"
               color={theme.colors.accent}
               size="compact"
             />
             <Figure
               data={quarantines}
               isLoading={isLoading}
-              label="Poddani kwarantannie"
+              label="Quarentena"
               color={theme.colors.accent}
               size="compact"
             />
             <Figure
               data={supervisions}
               isLoading={isLoading}
-              label="Objęci nadzorem epidemiologicznym"
+              label="Casos Suspeitos"
               color={theme.colors.accent}
               size="compact"
             />
             <Figure
               data={tests}
               isLoading={isLoading}
-              label="Testy"
+              label="Testados"
               color={theme.colors.accent}
               size="compact"
             />
